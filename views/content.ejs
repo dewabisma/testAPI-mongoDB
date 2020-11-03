@@ -1,0 +1,11 @@
+<%- include('header') %>
+
+
+<% for (let x of productImage) { %>
+    <% for (let item of x.img) { %>
+        <img src="<%=imgUrl%><%=item%>" alt="Pakaian">
+   <% } %>
+<% } %>
+
+
+<%- include('footer') %>
